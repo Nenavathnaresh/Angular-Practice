@@ -1,0 +1,9 @@
+<div class="d-flex flex-wrap container">
+    <div>
+        <h1>Products List</h1>
+        <ul *ngFor="let product of products">
+            <li><a routerLink="/productDetails" [queryParams]="product" >{{product.title}}</a></li>
+        </ul>
+    </div>
+   
+</div>

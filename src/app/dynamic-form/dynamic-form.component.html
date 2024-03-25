@@ -1,0 +1,20 @@
+
+<div class="container">
+    <h1>Dynamic Forms:</h1>
+    <form [formGroup]="userForm">
+        First Name:<input type="text" formControlName="fname"><br><br>
+        Last Name: <input type="text" formControlName="lname"><br><br>
+        <div formArrayName="details">
+            <div *ngFor="let detail of details.controls; let i = index">
+                <div [formGroupName]="i">
+                    <label for="">Address: {{i + 1 }}</label>
+                    <input type="text" formControlName="Address"> <br><br>
+                    <label for="">Phone: {{i + 1 }}</label>
+                    <input type="text" formControlName="phone">
+                </div>
+                
+            </div>
+        </div><br>
+        <button class="btn btn-info" (click)="addDetails()">Add another address and phone</button>
+    </form>
+</div>

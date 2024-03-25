@@ -1,0 +1,22 @@
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sideli {
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+ul li img {
+    width: 100%;
+    mix-blend-mode: multiply;
+}   
+.sidenav{
+    width: 20%;
+}
+.vnav{
+    width: 80%;
+}

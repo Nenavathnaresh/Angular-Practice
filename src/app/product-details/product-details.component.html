@@ -1,0 +1,16 @@
+<div class="container shadow rounded w-50 m-auto product bg-light">
+    <h1>{{productDet.title}}</h1>
+    <div class="d-flex flex-wrap">
+        <div class="w-25">
+            <img [src]="productDet.image" width='100%' height="100%">
+        </div>
+        <div class="w-75 p-3">
+            <h2>{{productDet.name}}</h2>
+            <p><b>Description:</b> {{productDet.description}}</p>
+            <div class="d-flex flex-wrap justify-content-between">
+                <h4>category: {{productDet.category}}</h4>
+                <h4>Price: ${{productDet.price}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
