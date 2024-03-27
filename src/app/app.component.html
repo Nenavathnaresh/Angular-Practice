@@ -1,3 +1,8 @@
 <div>
   <h1>app component</h1>
+  <h1 #highlight>This is a h1 element in the parent component</h1>
+  <h3>Counter: {{child?.count}}</h3>
+  <button (click)="inc()">Inc</button>
+  <button (click)="dec()">Dec</button>
+  <app-child #childView ></app-child>
 </div>

@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './child.component.css'
 })
 export class ChildComponent {
+count:any = 0 ;
 
+increment(){
+this.count++
+}
+
+decrement(){
+  this.count--
+}
 }
