@@ -1,0 +1,11 @@
+<p>handle-checkbox works!</p>
+<div class="container">
+    <div>
+        <input type="checkbox" name="" id="cb" [(ngModel)]="selectAll" (change)="checkAllGames($event)">
+        <label for="cb">selectAll</label>   
+    </div>
+    <div *ngFor="let num of arr; let i = index">
+        <input type="checkbox" name="" id="cb[i]" [(ngModel)]="selectOne[i]" (change)="checkNum($event,i)" [value]="num">
+        <label for="">:{{num}}</label>
+    </div>
+</div>
